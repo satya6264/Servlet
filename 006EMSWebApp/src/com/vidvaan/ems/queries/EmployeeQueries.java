@@ -1,0 +1,10 @@
+package com.vidvaan.ems.queries;
+
+public interface EmployeeQueries {
+
+	String INSERT_EMP = "INSERT INTO EMPLOYEE VALUES(?,?,?)";
+	String FIND_ALL_EMPLOYEE = "SELECT * FROM EMPLOYEE ORDER BY EID";
+	String DELETE_BY_ID = "DELETE FROM EMPLOYEE WHERE EID=?";
+	String UPDATE_EMP = "UPDATE EMPLOYEE SET ENAME=?, ESAL=? WHERE EID=?";
+	String FIND_BY_ID_EMPLOYEE = "SELECT * FROM EMPLOYEE WHERE EID=?";
+}
